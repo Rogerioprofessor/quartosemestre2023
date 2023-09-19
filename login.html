@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Estilizando formulários</title>
+		<meta charset="utf-8">
+		
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+		<script language="javascript" src="js/validaLogin.js"></script>	
+	</head>
+	<body>
+		<div id="container">
+			<img src="imagens/perfil.png">
+			<form onsubmit="return validaLogin()">
+				<div>
+					<input class="email" type="text" name="email" id="email" placeholder="Digite seu e-mail" >
+				</div>
+				<div>
+					<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha" >
+				</div>
+				<div>
+					<input class="submit" type="submit" value="Logar">
+					
+				</div>
+			</form>
+			<div id="msg"></div>
+		</div>
+	</body>
+
+</html>
